@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rosarivo&display=swap');
+
+
+.container {
+    width: 90%;
+    max-width: 860px;
+    margin: auto;
+}
+
+
+#background-img {
+    opacity: 0.95;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+#title {
+    max-width: 860px;
+    width: 90%;
+    font-family: Rosarivo;
+    font-size: 45px;
+    text-align: center;
+    border: black 0.5rem solid;
+    margin: auto;
+}
+
+#description {
+    max-width: 860px;
+    width: 90%;
+    font-family: Rosarivo;
+    font-size: 22px;
+    text-align: justify;
+    margin: auto;
+    margin-top: 1em;
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 80%;
+    }
+
+    #title {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    #description {
+        width: 80%;
+        font-size: 1rem;
+    }
+}
+
+.container2 {
+    max-width: 860px;
+    max-height: 280px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 200px 250px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 2em;
+}
+
+#name-label {
+    font-family: Rosarivo;
+    font-size: 18px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#name {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#email-label {
+    font-family: Rosarivo;
+    font-size: 18px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-family: Rosarivo;
+}
+
+#email {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#number-label {
+    font-family: Rosarivo;
+    font-size: 18px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#number {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#type-of-beans {
+    font-family: Rosarivo;
+    font-size: 18px;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+#dropdown {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+
+@media (max-width: 375px) {
+    .container2 {
+        width: 70%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8) 1fr;
+        grid-gap: 1em;
+    }
+
+    #name-label {
+        grid-column: 1/2;
+        grid-auto-rows: 1/2;
+    }
+
+    #name {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #email-label {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #email {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #number-label {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    #number {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    #type-of-beans {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+
+    #dropdown {
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+}
+
+@media (max-width: 675px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .container2 {
+    width: 70%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8) 1fr;
+    grid-gap: 1em;
+    margin-bottom: 70px;
+    }
+
+    #name-label {
+        grid-column: 1/2;
+        grid-auto-rows: 1/2;
+    }
+
+    #name {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #email-label {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #email {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #number-label {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    #number {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    #type-of-beans {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+
+    #dropdown {
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+}
+
+.container3 {
+    max-width: 860px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30px 400px;
+    grid-template-rows: 1fr 0.7fr 0.7fr 0.7fr;
+}
+
+#cold-or-hot {
+    font-family: Rosarivo;
+    font-size: 18px;
+    border: black 0.3rem solid;
+    margin-right: 245px;
+    padding: 6px;
+    grid-column: 1/3;
+    margin-bottom: 30px;
+}
+
+.one {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.one-label {
+    font-family: Rosarivo;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.two {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.two-label {
+    font-family: Rosarivo;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.three {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.three-label {
+    font-family: Rosarivo;
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+@media (max-width: 375px) {
+    .container3 {
+        width: 80%;
+    }
+
+    #cold-or-hot {
+        font-size: 1rem;
+    }
+}
+
+.container4 {
+    max-width: 860px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30px 600px;
+    grid-template-rows: 1fr 0.7fr 0.7fr 0.7fr;
+}
+
+#type-of-coffee-maker {
+    font-family: Rosarivo;
+    font-size: 18px;
+    border: black 0.3rem solid;
+    margin-right: 275px;
+    padding: 6px;
+    grid-column: 1/3;
+    margin-bottom: 30px;
+}
+
+.first {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.first-label {
+    font-family: Rosarivo;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.second {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.second-label {
+    font-family: Rosarivo;
+    grid-column: 2/3;
+    grid-row: 3/4; 
+}
+
+.third {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.third-label {
+    font-family: Rosarivo;
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+@media (max-width: 375px) {
+    .container4 {
+        width: 80%;
+    }
+
+    #type-of-coffee-maker {
+        font-size: 1rem;
+        max-width: 210px;
+    }
+}
+
+.container5 {
+    max-width: 860px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40px 400px ;
+    grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    padding: 5px;
+}
+
+#type-of-coffee {
+    font-family: Rosarivo;
+    font-size: 18px;
+    border: black 0.3rem solid;
+    margin-right: 115px;
+    padding: 6px;
+    grid-column: 1/3;
+    margin-bottom: 30px;
+}
+
+.choice-one {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.choice-label-one {
+    font-family: Rosarivo;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.choice-two {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.choice-label-two {
+    font-family: Rosarivo;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.choice-three {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.choice-label-three {
+    font-family: Rosarivo;
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.choice-four {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.choice-label-four {
+    font-family: Rosarivo;
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.choice-five {
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+.choice-label-five {
+    font-family: Rosarivo;
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+.choice-six {
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+
+.choice-label-six {
+    font-family: Rosarivo;
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+
+@media (max-width: 375px) {
+    .container5 {
+        width: 80%;
+    }
+
+    #type-of-coffee {
+        font-size: 1rem;
+        max-width: 210px;
+    }
+}
+
+.comment-div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    max-width: 860px;
+    margin-top: 70px;
+}
+
+.text-comment {
+    margin: auto;
+    padding: 0.5em 0.5em;
+    font-family: Rosarivo;
+    font-size: 21px;
+    border: black 0.3rem solid;
+    text-align: center; 
+    max-width: 240px;
+}
+
+.textarea {
+    width: 90%;
+    max-width: 860px;
+    margin: auto;
+} 
+
+#submit {
+    width: 90%;
+    max-width: 60px;
+    margin: auto;
+    transform: scale(1.2);
+    margin-bottom: 20px;
+}
+
+#submit:hover {
+    background-color: silver;
+}
+
+@media (max-width: 375px) {
+    #comment-div {
+        width: 80%;
+        margin: auto;
+    }
+
+    .text-comment {
+        font-size: 1rem;
+    }
+
+    .textarea {
+        width: 80%;
+    }
+}
