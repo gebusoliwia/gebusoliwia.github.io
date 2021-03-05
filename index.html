@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Coffee form</title>
+    <link rel="stylesheet" href="styless.css">
+    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+<body>
+  <main> 
+      <div class="container">
+        <img id="background-img" src="photo-1480348709911-be15f2c579ff.jpg" >
+      </div>
+   <section id="main-section">
+    <header>
+      <h1 id="title">Favorite type of coffee</h1>
+      <p id="description">Latte, americano, affogato…it’s crazy all that you can do with a few small beans. Whether you are a coffee newbie or you consider yourself a coffee connoisseur, there are so many types of coffee drinks, let us discovery which type of coffee is the most popular and tasy!</p>
+    </header>  
+    <br><br>
+    
+      <form id="survey-form">
+       <div id="main-info">
+
+        <div class="container2">
+         <label for="name" id="name-label">Name:</label> &nbsp;&nbsp;&nbsp;
+         <input type="text" id="name" placeholder="Name" size="30" required>
+         <br>
+         <br>
+      
+         <label for="email" id="email-label">E-mail:</label> &nbsp;&nbsp;&nbsp;
+         <input type="email" id="email" placeholder="Email" size="30" required>
+         <br>
+         <br>
+          
+         <label for="number" id="number-label">Age:</label> &nbsp;&nbsp;&nbsp;
+         <input type="number" id="number" placeholder="Age" required min="10" max="100"> 
+         <br> 
+         <br>
+          
+         <label for="dropdown" id="type-of-beans">Select type of bean</label>
+      
+         <select id="dropdown">
+         <option value="arabica">Arabica</option>
+         <option value="robusta">Robusta</option>
+         </select>
+        </div>
+        <div class="container3">
+          <label for="cold-or-hot" id="cold-or-hot"><strong>Hot or cold coffee: </strong></label> 
+          <br>
+          <br>
+          <input type="radio" id="cold-or-hot" class="one" name="kind-of-coffee" value="cold">
+          <label for="cold-or-hot" class="one-label" >Cold</label>
+          <input type="radio" id="cold-or-hot" class="two" name="kind-of-coffee" value="hot">
+          <label for="cold-or-hot" class="two-label" >Hot</label>
+          <input type="radio" id="cold-or-hot" class="three" name="kind-of-coffee" value="both">
+          <label for="cold-or-hot" class="three-label" >Both</label>
+        </div>
+
+        <br>
+         <div class="container4">
+          <label for="type-of-coffee-maker" id="type-of-coffee-maker"><strong>What kind of coffee maker do you use:</strong></label>
+          <br>
+          <br>
+          <input type="radio" id="type-of-coffee-maker" class="first" name="coffee-maker" value="moka">
+          <label for="type-of-coffee-maker" class="first-label" >Moka</label>
+          <br>
+          <br>
+          <input type="radio" id="type-of-coffee-maker" class="second" name="coffee-maker" value="french-press">
+          <label for="type-of-coffee-maker" class="second-label" >French press</label>
+          <br>
+          <br>
+          <input type="radio" id="type-of-coffee-maker" class="third" name="coffee-maker" value="drip">
+          <label for="type-of-coffee-maker" class="third-label" >Drip</label>
+        </div>
+        <div class="container5">
+        <label for="type-of-coffee" id="type-of-coffee"><strong>Choose your favorite type of coffee: </strong><br></label>
+        <br>
+          <input type="checkbox" id="type-of-coffee" class="choice-one" value="black-coffee">
+          <label class="choice-label-one">Black coffee</label>
+
+          <input type="checkbox" id="type-of-coffee" class="choice-two" value="espresso">
+          <label for="type-of-coffee" class="choice-label-two">Espresso</label>
+          
+          <input type="checkbox" id="type-of-coffee" class="choice-three"value="cappuccino">
+          <label class="choice-label-three">Cappuccino</label>
+        
+          <input type="checkbox" id="type-of-coffee" class="choice-four" value="latte">
+          <label class="choice-label-four">Latte</label>
+        
+          <input type="checkbox" id="type-of-coffee" class="choice-five" value="iced-coffee">
+          <label class="choice-label-five">Iced coffee</label>
+        
+          <input type="checkbox" id="type-of-coffee" class="choice-six" value="frappuccino">
+          <label class="choice-label-six">Frappuccino</label>
+        </div>
+      </div>
+        <div class="comment-div">
+          <label for="textarea" class="text-comment">Additional comments:</label>
+          <br>
+          <textarea class="textarea" rows="11" cols="75"></textarea>
+          <br>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+   </section>
+  </main>
+ </body>
+</html>
